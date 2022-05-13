@@ -11,7 +11,7 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": ["eslint --fix", "yarn format"]
+    "*.{js,jsx,ts,tsx}": ["eslint --fix", "prettier --write --ignore-path .gitignore"]
   },
   "dependencies": {
     "@emotion/react": "^11.9.0",
