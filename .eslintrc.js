@@ -1,17 +1,20 @@
 module.exports = {
   parserOptions: {
     ecmaVersion: 2017,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
-    }
+    sourceType: "module",
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
   env: {
     es6: true,
   },
-  "extends": [
+  parser: "@typescript-eslint/parser",
+  plugins: ["@typescript-eslint"],
+  extends: [
+    "eslint:recommended",
     "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
     "prettier",
   ],
-  parser: "@typescript-eslint/parser"
 };
